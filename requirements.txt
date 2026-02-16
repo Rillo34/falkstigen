@@ -1,0 +1,5 @@
+# NiceGUI för UI och routing
+nicegui>=1.37.0
+
+# Pillow för bildhantering (valfritt, men bra om du jobbar med bilder)
+pillow
