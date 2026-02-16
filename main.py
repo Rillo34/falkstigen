@@ -2,7 +2,10 @@ from nicegui import ui, app
 from pages import home, pictures, prices, map_and_drawing, contact, about
 import os
 
-app.add_static_files('/static', 'static')
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+app.add_static_files('/static', str(BASE_DIR / 'static'))
 
 
 @ui.page('/')
