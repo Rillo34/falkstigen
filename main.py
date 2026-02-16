@@ -1,6 +1,6 @@
 from nicegui import ui, app
 from pages import home, pictures, prices, map_and_drawing, contact, about
-
+import os
 
 app.add_static_files('/static', 'static')
 
@@ -29,4 +29,5 @@ def contact_page():
 def map_and_drawing_page():
     map_and_drawing.create()
 
-ui.run()
+port = int(os.environ.get("PORT", 8080))
+ui.run(host="0.0.0.0", port=port)
