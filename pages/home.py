@@ -2,7 +2,6 @@ from nicegui import ui, app
 from components.leftdrawer import LeftDrawer
 import os
 
-app.add_static_files('/static', '/home/rickard/Python/Falkstigen_web/static')
 
 
 def create():
