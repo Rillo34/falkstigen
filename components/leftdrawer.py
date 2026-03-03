@@ -14,21 +14,24 @@
 
 from nicegui import ui
 
+
 class LeftDrawer:
     def __init__(self):
-        with ui.left_drawer(
-            value=True,                # öppen från start – viktigt!
-            bordered=True,
-            elevated=True,
-            fixed=False
-        ).props('width=240 bordered'):
-            
+        
+            # Hamburger-knapp – bara på mobil / mindre skärmar
+        with ui.row().classes('items-center gap-4 p-2'):
+            ui.button(icon='menu', on_click=lambda: drawer.toggle()).props('flat round color=primary')
+            # ui.label('Menu').classes('text-xl font-bold')
+
+        with ui.left_drawer(value=False, bordered=True, elevated=True) as drawer:
+            drawer.props('width=240 bordered')
+
             with ui.list().classes('w-full bg-transparent'):
                 # Hem (med purple som tidigare)
                 with ui.item(on_click=lambda: ui.navigate.to('/')).props('tag=a'):
                     with ui.item_section():
                         ui.item_label('Hem').classes('text-lg text-purple-700')
-                    with ui.item_section().props('side'):  # ikon till höger
+                    with ui.item_section().props('side'):
                         ui.icon('house').classes('text-purple-700')
 
                 ui.separator()

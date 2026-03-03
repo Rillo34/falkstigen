@@ -8,9 +8,11 @@ def create():
     LeftDrawer()
 
     with ui.element('div').classes(
-        'relative h-[450px] sm:h-[550px] md:h-[650px] w-full bg-cover bg-center flex items-center'
+        'relative w-full bg-center bg-no-repeat flex items-center'
+        'min-h-[450px] sm:min-h-[550px] md:min-h-[650px] lg:min-h-[80vh]'  # mer flexibel höjd
     ).style(
-        'background-image: url("/static/2-fasad.jpg")'
+        'background-image: url("/static/2-fasad.jpg");'
+        'background-size: contain;'  # ← nyckeländringen!
     ):
         with ui.column().classes('bg-black/40 p-8 rounded-xl ml-6 max-w-xl'):
             ui.label('Falkstigen 1 – 160m2 mitt i Vemdalsskalet').classes(
