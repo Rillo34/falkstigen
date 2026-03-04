@@ -35,11 +35,13 @@ label_list = [
 
 def create():
     LeftDrawer()
-    
-    with ui.grid().classes('grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4'):
-        for i, filename in enumerate(image_files):
-            with ui.card().classes('overflow-hidden'):  # Förhindrar att bilden sticker ut ur kortet
-                # Bilden fyller hela bredden av kortet, behåller proportioner
-                ui.image(f'/static/{filename}').classes('w-full h-auto object-cover')
-                # Label centrerad, lite padding
-                ui.label(label_list[i]).classes('text-lg text-center p-2')
+    with ui.element('div').classes('w-screen relative left-1/2 -translate-x-1/2'):
+     
+        with ui.grid().classes('grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 p-6'):        
+            for i, filename in enumerate(image_files):
+                with ui.card().classes('overflow-hidden'):  # Förhindrar att bilden sticker ut ur kortet
+                    # Bilden fyller hela bredden av kortet, behåller proportioner
+                    # ui.image(f'/static/{filename}').classes('w-full h-auto object-cover')
+                    ui.image(f'/static/{filename}').classes('w-full h-72 sm:h-80 md:h-96 object-cover')
+                    # Label centrerad, lite padding
+                    ui.label(label_list[i]).classes('text-lg text-center p-2')
