@@ -15,10 +15,13 @@ def create():
         'background-size: contain;'  # ← nyckeländringen!
     ):
         with ui.column().classes('bg-black/40 p-8 rounded-xl ml-6 max-w-xl'):
-            ui.label('Falkstigen 1 – 160m2 mitt i Vemdalsskalet').classes(
+            ui.label('Falkstigen 1 – ').classes(
                 'text-4xl sm:text-5xl md:text-6xl font-bold text-white drop-shadow-xl'
             )
-            ui.label('12 bäddar • Skalsterrassen • 2st Bastu • Nära till allt').classes(
+            ui.label('12p hus på Skalsterrassen, Vemdalsskalet').classes(
+                'text-4xl sm:text-5xl md:text-6xl font-bold text-white drop-shadow-xl'
+            )
+            ui.label('Mittemot Hovdebacken • Skalsterrassen • Dubbla Bastu • Nära till allt').classes(
                 'text-xl sm:text-2xl text-white mt-4 drop-shadow'
             )
     with ui.row().classes('items-center gap-6 text-lg'):

@@ -33,4 +33,4 @@ def map_and_drawing_page():
     map_and_drawing.create()
 
 port = int(os.environ.get("PORT", 8080))
-ui.run(host="0.0.0.0", port=port, title='Falkstigen', reload=True)
+ui.run(host="0.0.0.0", port=port, title='Falkstigen')
