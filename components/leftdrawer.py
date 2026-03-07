@@ -9,7 +9,7 @@ class LeftDrawer:
             # Hamburger-knapp – bara på mobil / mindre skärmar
         with ui.row().classes('items-center gap-4 p-2'):
             ui.button(icon='menu', on_click=lambda: drawer.toggle()).props('flat round color=primary')
-            # ui.label('Menu').classes('text-xl font-bold')
+            ui.label('Menu').classes('text-xl font-bold')
 
         with ui.left_drawer(value=False, bordered=True, elevated=True) as drawer:
             drawer.props('width=240 bordered')
