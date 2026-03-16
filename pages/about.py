@@ -1,16 +1,28 @@
 from nicegui import ui
 from components.leftdrawer import LeftDrawer
 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GELVE5TP2P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GELVE5TP2P');
+</script>
+
+
 def create():
     LeftDrawer()
     about_text = """
     Välkomna till Falkstigen !
     
-    Lyxigt 160m2 boende på soliga Skalsterrassen mitt i Vemdalsskalet med nära till allt. 
+    Exklusivt 160m2 boende på soliga Skalsterrassen mitt i Vemdalsskalet med nära till allt. 
     
     Huset byggdes 2011 och består av tre olika lägenheter, detta är den stora och ljusa övervåningen med två våningar.
     Läget är optimalt, längst ner på Skalsterrassen (bredvid Hildings backe) i Vemdalsskalet och har en härlig vid utsikt rakt in i Hovdemassivet och backarna Hovde och Turisten. Huset är exklusivt, med bland annat dubbla bastu (torr- och ångbastu).
-    Till backen tar man sig genom att glida ner mot skidbron och över till liften Hovde Express, det är cirka 150 meter från huset. Man når huset till fots från alla nedfarter på grund av det centrala läget.
+    Till backen tar man sig genom att glida ner mot skidbron och över till liften Hovde Express, det är drygt 100 meter från huset. Man når huset till fots från alla nedfarter på grund av det centrala läget.
 
     Det är drygt 100 meter till ICA, Vemdalsskalets högfjällshotell och Skalets torg med restauranger, Skistarshop, afterski och bageri. Spårcentralen ligger cirka 400 meter bort. Parkering finns i anslutning till entrén på övervåningen eller på den stora gårdsplanen, där finns det plats för 6–8 bilar och till säsongen två laddare typ 2.
 

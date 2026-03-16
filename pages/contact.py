@@ -1,6 +1,18 @@
 from nicegui import ui
 from components.leftdrawer import LeftDrawer
 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GELVE5TP2P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GELVE5TP2P');
+</script>
+
+
 def create():
     LeftDrawer()
     ui.label("Kontakt").classes('text-2xl font-bold text-black')

@@ -1,6 +1,19 @@
 from nicegui import ui
 from components.leftdrawer import LeftDrawer
 
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GELVE5TP2P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GELVE5TP2P');
+</script>
+
+
 def create():
     LeftDrawer()
     ui.label("Priser och tillgänglighet").classes('text-2xl font-bold text-black')
@@ -10,9 +23,11 @@ def create():
     {'name': 'pris', 'label': 'Pris (kr)', 'field': 'pris', 'sortable': False},
     {'datum': 'Datum', 'label': 'Datum', 'field': 'datum', 'sortable': True},
     {'name': 'tillgänglighet', 'label': 'Tillgänglighet', 'field': 'tillgänglighet', 'sortable': True},
-
     ]
+
     rows = [
+        {'vecka': 'v14 2026', 'pris': 22000, 'datum': '28/3-4/4', 'tillgänglighet': 'Tillgänglig'},
+        {'vecka': 'v15 2026', 'pris': 28000, 'datum': '4/4-11/4', 'tillgänglighet': 'Tillgänglig'},
         {'vecka': 'Vecka 5 2027', 'pris': 18000, 'datum': '30/1-6/2', 'tillgänglighet': 'Bokad', 'classes': 'bg-red-100'},
         {'vecka': 'Vecka 6 2027', 'pris': 19000, 'datum': '6/2-13/2', 'tillgänglighet': 'Tillgänglig'},
         {'vecka': 'Vecka 7 2027', 'pris': 31000, 'datum': '13/2-20/2', 'tillgänglighet': 'Tillgänglig'},

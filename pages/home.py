@@ -2,6 +2,16 @@ from nicegui import ui, app
 from components.leftdrawer import LeftDrawer
 import os
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GELVE5TP2P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GELVE5TP2P');
+</script>
+
 
 
 def create():
@@ -21,7 +31,7 @@ def create():
             ui.label('12p hus på Skalsterrassen, Vemdalsskalet').classes(
                 'text-4xl sm:text-5xl md:text-6xl font-bold text-white drop-shadow-xl'
             )
-            ui.label('Mittemot Hovdebacken • Skalsterrassen • Dubbla Bastu • Nära till allt').classes(
+            ui.label('Mittemot Hovdebacken • Skalsterrassen • Bredvid Hildings backe • Nära till allt').classes(
                 'text-xl sm:text-2xl text-white mt-4 drop-shadow'
             )
     with ui.row().classes('items-center gap-6 text-lg'):

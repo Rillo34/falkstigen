@@ -2,6 +2,18 @@ from nicegui import ui
 from components.leftdrawer import LeftDrawer
 from pathlib import Path
 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GELVE5TP2P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GELVE5TP2P');
+</script>
+
+
 # Root av projektet
 BASE_DIR = Path(__file__).resolve().parent.parent
 image_folder = BASE_DIR / 'static'
