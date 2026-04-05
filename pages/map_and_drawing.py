@@ -19,9 +19,9 @@ image_files = sorted(
 )
 
 label_list = [
-    "Pistkarta",
     "Planlösning entreplan",
-    "Planlösning loft"
+    "Planlösning loft",
+    "Pistkarta"
 ]
 
 def create():

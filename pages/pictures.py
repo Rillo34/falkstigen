@@ -25,7 +25,6 @@ label_list = [
     "Sovrum våningssäng",
     "Kök",
     "Storstuga",
-    "Storstuga",
     "Loft",
     "Omklädningsrum",
     "Torrbastu",
@@ -37,13 +36,12 @@ label_list = [
 
 def create():
     LeftDrawer()
+    # ui.label("Bilder").classes('w-full text-2xl font-bold text-black text-right')
     with ui.element('div').classes('w-screen relative left-1/2 -translate-x-1/2'):
-     
         with ui.grid().classes('grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 p-6'):        
             for i, filename in enumerate(image_files):
                 with ui.card().classes('overflow-hidden'):  # Förhindrar att bilden sticker ut ur kortet
-                    # Bilden fyller hela bredden av kortet, behåller proportioner
-                    # ui.image(f'/static/{filename}').classes('w-full h-auto object-cover')
-                    ui.image(f'/static/{filename}').classes('w-full h-72 sm:h-80 md:h-96 object-cover')
+                    # Högre bilder
+                    ui.image(f'/static/{filename}').classes('w-full h-96 sm:h-[30rem] md:h-[40rem] object-cover')
                     # Label centrerad, lite padding
                     ui.label(label_list[i]).classes('text-lg text-center p-2')

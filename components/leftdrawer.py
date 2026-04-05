@@ -33,7 +33,7 @@ class LeftDrawer:
 
                 with ui.item(on_click=lambda: ui.navigate.to('/about')).props('tag=a'):
                     with ui.item_section():
-                        ui.item_label('Om huset').classes('text-lg')
+                        ui.item_label('Om huset, info').classes('text-lg')
                     with ui.item_section().props('side'):
                         ui.icon('info')
 
@@ -45,7 +45,7 @@ class LeftDrawer:
                         
                 with ui.item(on_click=lambda: ui.navigate.to('/prices')).props('tag=a'):
                     with ui.item_section():
-                        ui.item_label('Priser').classes('text-lg')
+                        ui.item_label('Priser och bokning').classes('text-lg')
                     with ui.item_section().props('side'):
                         ui.icon('euro')
 
