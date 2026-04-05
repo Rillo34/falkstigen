@@ -2,15 +2,7 @@ from nicegui import ui, app
 from components.leftdrawer import LeftDrawer
 import os
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GELVE5TP2P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-GELVE5TP2P');
-</script>
 
 
 
