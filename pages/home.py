@@ -47,8 +47,8 @@ def create():
             ui.label('Ångbastu')
 
         with ui.row().classes('items-center gap-2'):
-            ui.icon('wc')
-            ui.label('Omklädningsrum')
+            ui.icon('fireplace').classes('text-amber-700')
+            ui.label('Öppen spis')
 
         with ui.row().classes('items-center gap-2'):
             ui.icon('bed')
