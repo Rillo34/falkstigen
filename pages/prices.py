@@ -18,7 +18,7 @@ def create():
     ]
 
     rows = [
-        {'vecka': 'v52 2026', 'pris': 34000, 'datum': '20/12-27/12', 'status': 'Tillgänglig', 'comment': 'OBS: byte söndag'},
+        {'vecka': 'v52 2026', 'pris': 34000, 'datum': '20/12-27/12', 'status': 'Bokad', 'comment': 'OBS: byte söndag'},
         {'vecka': 'v53 2026', 'pris': 40000, 'datum': '27/12-3/1', 'status': 'Tillgänglig', 'comment': 'OBS: byte söndag'},
         {'vecka': 'Vecka 5 2027', 'pris': 18000, 'datum': '30/1-6/2', 'status': 'Bokad'},
         {'vecka': 'Vecka 6 2027', 'pris': 20000, 'datum': '6/2-13/2', 'status': 'Tillgänglig'},
